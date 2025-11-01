@@ -1,0 +1,153 @@
+
+# MLComps
+
+> Building reproducible, scalable, and collaboration-ready machine learning projects
+
+**Notice:** We are currently in our initial development phase and **not accepting external contributions** at this time. We'll announce when we're ready to collaborate with the community!
+
+---
+
+## About Us
+
+We are a team of recent Engineering graduates from **Carnegie Mellon University**, passionate about applying our knowledge in machine learning and artificial intelligence to real-world problems. MLComps serves as our playground for experimenting with ML models, developing best practices, and building production-ready solutions.
+
+Our repositories are designed with reproducibility, scalability, and ease of deployment in mind, reflecting the rigorous engineering principles we learned at CMU.
+
+**Status:** Just getting started! Building our foundation and establishing best practices. Contributions will be welcomed in the future - stay tuned!
+
+---
+
+##  Repository Standards
+
+All repositories in this organization follow a unified structure to ensure consistency, reproducibility, and seamless deployment across different environments.
+
+### Project Structure
+
+Each repository adheres to the following standards:
+
+#### **1. Script-Based Execution**
+- All code is executable via command-line scripts with configurable arguments
+- Designed for easy deployment on virtual machines (VMs) and cloud environments
+- Clear entry points for training, inference, and evaluation
+
+```bash
+# Example usage
+python scripts/train.py --config configs/default.yaml --epochs 100
+python scripts/inference.py --model-path models/best.pt --input data/test/
+```
+
+#### **2. Notebook Integration**
+- Interactive Jupyter notebooks provided for experimentation and rapid prototyping
+- Notebooks are compatible with **Google Colab** and **Kaggle** environments
+- Used primarily for exploratory data analysis, demonstrations, and critical testing scenarios
+- Clear documentation on converting notebook workflows to production scripts
+
+#### **3. Environment Management**
+- We use **[uv](https://github.com/astral-sh/uv)** as our preferred Python package manager
+- Fast, reliable dependency resolution and virtual environment management
+- Each repository includes:
+  - `pyproject.toml` for dependency specification
+  - `.python-version` for Python version pinning
+  - Setup instructions for quick environment bootstrapping
+
+```bash
+# Quick setup with uv
+uv venv
+uv pip install -e .
+```
+
+---
+
+## 🛠️ Getting Started
+
+### Prerequisites
+- Python 3.9+ (specific version noted in each repository)
+- [uv package manager](https://github.com/astral-sh/uv) (recommended)
+- Git
+
+### Installation
+Each repository contains detailed setup instructions in its own README. Generally:
+
+```bash
+# Clone the repository
+git clone https://github.com/MLComps/repository-name.git
+cd repository-name
+
+# Set up environment with uv
+uv venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+uv pip install -e .
+
+# Run the project
+python scripts/main.py --help
+```
+
+---
+
+## Our Mission
+
+As recent CMU Engineering graduates, we're committed to:
+- **Continuous Learning:** Exploring cutting-edge ML/AI techniques and frameworks
+- **Best Practices:** Implementing industry-standard code quality and reproducibility
+- **Real-World Applications:** Building projects that solve practical problems
+- **Knowledge Sharing:** Documenting our learning journey and insights
+
+---
+
+## Contributions & Collaboration
+
+### Current Status: **Not Accepting Contributions Yet**
+
+We're currently in our **initial development phase** and are currently exploring approaches external contributions at this time. Our team is focused on:
+- Establishing our core infrastructure and standards
+- Building our foundational projects
+- Refining our workflows and best practices
+- Creating comprehensive documentation
+
+### Future Collaboration
+
+We're excited about the potential for collaboration and plan to open our doors to contributors in the future! When we're ready, we'll be looking for:
+- **Code Contributors:** Help us build and improve ML/AI projects
+- **Reviewers:** Provide feedback on our implementations and approaches
+- **Documentation Writers:** Improve our guides and tutorials
+- **Idea Contributors:** Suggest new projects or improvements to existing ones
+
+### 📬 Stay in the Loop
+
+Want to be notified when we start accepting contributions?
+
+- ⭐ **Star our repositories** to get notifications about updates
+- 👀 **Watch this organization** to stay informed about new projects
+- 🔔 **Watch for announcements** - We'll update this README and make an announcement when contribution guidelines are ready
+
+**We'll notify the community through:**
+- An updated README with contribution guidelines
+- A dedicated CONTRIBUTING.md file in each repository
+- Announcements in repository discussions (when enabled)
+
+Thank you for your interest in MLComps! We look forward to collaborating with the community once we're ready.
+
+---
+
+## Resources
+
+- **uv Documentation:** https://github.com/astral-sh/uv
+- **Our Coding Standards:** (coming soon)
+- **Contribution Guidelines:** (coming soon)
+- **Project Roadmap:** (coming soon)
+
+---
+
+## License
+
+Unless otherwise specified, all repositories are licensed under the MIT License. See individual repositories for specific licensing information.
+
+---
+
+<div align="center">
+
+**Built with ❤️ by CMU Engineers practicing ML/AI**
+
+*Last updated: November 2025*
+
+</div>
